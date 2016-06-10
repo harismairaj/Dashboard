@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>360training | Dashboard</title>
+
+	<!-- BEGIN CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/dashboard.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/isotope.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- END CSS -->
+
+    <!-- BEGIN SCRIPTS -->
+    <script type="text/javascript" src="../assets/plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/plugins/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/plugins/jquery.ui.touch-punch.min.js"></script>
+
+    <script type="text/javascript" src="../assets/plugins/html5shiv.js"></script>
+    <script type="text/javascript" src="../assets/plugins/respond.min.js"></script>
+	<script type="text/javascript" src="../assets/plugins/modernizr.js"></script>
+	<script type="text/javascript" src="../assets/plugins/platform.js" async defer></script>
+	<script type="text/javascript" src="../assets/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/plugins/isotope.pkgd.min.js"></script>
+
+    <script type='text/javascript' src="../assets/scripts/ui.js"></script>
+	<!-- END SCRIPTS -->
+
+</head>
+
+<body>
+
+	<!-- BEGIN WRAPPER -->
+    <div id="wrapper">
+
+		<nav class="navbar-fixed-top">
+			<a class="brand" href="#"></a>
+			<ul class="menu">
+				<li class="user-detail">
+					<a href="#"><div class="username">Username</div>
+					<div>emailaddress@email.com</div></a>
+				</li>
+				<li>
+					<button data-toggle="dropdown" class="dropdown-toggle" type="button"><span class="glyphicon glyphicon-menu-down"></span></button>
+					<ul role="menu" class="dropdown-menu dropdown-menu-right">
+						<li><a href="#" class="active">Account Information</a></li>
+						<li><a href="#">Address Book</a></li>
+						<li><a href="#">My Orders</a></li>
+						<li><a href="#">Billing & Subscription</a></li>
+						<li><a href="#">Support</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Terms Of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sign Out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="sidebar">
+		  <h4 class="heading"><span>Dashboard</span></h4>
+		  <div class="items" id="left-nav-acc">
+			  <div class="panel">
+				<button class="collapsed learn" data-toggle="collapse" data-parent="#left-nav-acc" href="#left-nav-1" aria-controls="left-nav-1"><span>Learn</span></button>
+				<div id="left-nav-1" class="panel-collapse collapse">
+					<a href="#" class="courses-icon active">My Courses</a>
+					<a href="#" class="subscriptions-icon">My Subscriptions</a>
+				</div>
+			  </div>
+			  <div class="panel">
+				<button class="collapsed author" data-toggle="collapse" data-parent="#left-nav-acc" href="#left-nav-2" aria-controls="left-nav-2"><span>Author</span></button>
+				<div id="left-nav-2" class="panel-collapse collapse">
+					<a href="#" class="create-course-icon">Create & Manage Courses</a>
+					<a href="#" class="course-report-icon">Course Reports</a>
+				</div>
+			  </div>
+			  <div class="panel">
+				<button class="collapsed manage" data-toggle="collapse" data-parent="#left-nav-acc" href="#left-nav-3" aria-controls="left-nav-3"><span>Manage</span></button>
+				<div id="left-nav-3" class="panel-collapse collapse">
+					<a href="#" class="manage-users-icon">Manage Users</a>
+					<a href="#" class="enroll-users-icon">Enroll Users</a>
+					<a href="#" class="run-report-icon">Run Reports</a>
+				</div>
+			  </div>
+			  <div class="panel">
+				<button class="collapsed resources" data-toggle="collapse" data-parent="#left-nav-acc" href="#left-nav-4" aria-controls="left-nav-4"><span>Resources</span></button>
+				<div id="left-nav-4" class="panel-collapse collapse">
+					<a href="#" class="shop-icon">Shop Courses</a>
+					<a href="#" class="browse-free-courses-icon">Browse Free Courses</a>
+					<a href="#" class="support-icon">Support Forum</a>
+				</div>
+			  </div>
+		  </div>
+		  <button id="left-collapse-btn" class="collapse-btn"></button>
+		</div>
+		<div class="main">
+			<h1 class="page-heading">My Courses</h1>
+
+			<div class="row statistics">
+				<div class="col-xs-6 col-sm-4">
+				  <div class="placeholder">
+					<h4>11</h4>
+					<span>Number Of My Courses</span>
+				  </div>
+				</div>
+				<div class="col-xs-6 col-sm-4">
+				  <div class="placeholder">
+					  <h4>3,456</h4>
+					  <span>Courses In Your Subscription</span>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+				  <div class="placeholder">
+					  <h4>2</h4>
+					  <span>Courses You've Completed</span>
+				  </div>
+				</div>
+			</div>
+			<div class="iso-container">
+				<ul class="iso-header">
+					<li class="search">
+						<input type="text" class="form-control" placeholder="Search Your Courses By Keyword"></input>
+					</li>
+					<li class="filters" id="iso-filter-btns">
+						<button type="button" class="active" data-filter="*">All</button>
+						<button type="button" data-filter=".new">New</button>
+						<button type="button" data-filter=".started">Started</button>
+						<button type="button" data-filter=".completed">Completed</button>
+						<button type="button" data-filter=".subscription">Subscription</button>
+					</li>
+					<li class="sorting">
+						<button data-toggle="dropdown" class="dropdown-toggle" type="button"></button>
+						<ul role="menu" class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Sort Ascending (A-Z)</a></li>
+							<li><a href="#">Sort Descending (Z-A)</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="isotope"></div>
+			</div>
+		</div>
+
+		<div id="content-overlay"></div>
+	</div>
+    <!-- END WRAPPER -->
+
+    <script>
+		var recObg = {
+			"affiliateItems": [
+			{
+			  "CourseName": "Abdus Classroom Case3 and Case5 Combine DIFFERENT LOCATION",
+			  "CourseGuid": "f2aa2c26490247faadfe3b5705711920",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Online Course",
+			  "CourseGuid": "97c38bc866514151b350a6714a6ad19e",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Testing Online Course",
+			  "CourseGuid": "b2960f656ce045208773c066f240fde0",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "30 Hour Construction Industry Outreach",
+			  "CourseGuid": "4d995f92d3b14640b66a0c7b3985dd90",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Abdus_16FEB2016",
+			  "CourseGuid": "f08a080ef34e43d99351a2d17620a328",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Abdus_16FEB2016",
+			  "CourseGuid": "5796056FAFC74E15B4C49420588A5E39",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Abdus_TEST_16FEB201623424",
+			  "CourseGuid": "5a5c9ddc161e44bf8966eb9cf74627c4",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Abdus_TEST_16FEB201623424",
+			  "CourseGuid": "0E0757E5AC3B4E319B2AF30A096A8A4F",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "test WLCMS-2460r",
+			  "CourseGuid": "c7553c16415f4f7097b96bd112a4bc49",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			},
+			{
+			  "CourseName": "Abdus_AgainTest_16FEB2016",
+			  "CourseGuid": "974de8580cf440e19f088be330975938",
+			  "CourseImageUrl": "assets/img/bannerSpotImage1.jpg",
+			  "StoreAddress": "http://www.360training.com"
+			}
+		  ]
+		};
+
+		$(function(){
+
+			$('#left-collapse-btn').click(function(){
+				leftNav($("#wrapper").hasClass("left-toggle"));
+			});
+			$('#left-nav-acc').on('show.bs.collapse', function(){leftNav(true)}).on('hide.bs.collapse', function(){leftNav(true)});
+			$("#content-overlay").click(function(){
+				leftNav(false);
+			});
+			leftNav(true);
+
+			ui.isoTope.init();
+			get_recommendations(recObg.affiliateItems);
+		})
+
+		function get_recommendations(data)
+		{
+			var elems = [];
+			for(var i=0; i<data.length; i++)
+			{
+				var tempArr = ['','new','starter','completed','subscription'];
+				var itemCategory = tempArr[Math.floor(Math.random() * (3 - 0 + 1)) + 0];
+				var $elem;
+				var strHtml = 	'<div class="iso-item single '+itemCategory+'">'+
+									'<div class="front">'+
+										'<div class="iso-image" style="background-image:url('+data[i].CourseImageUrl+')"></div>'+
+										'<div class="iso-title">'+data[i].CourseName+'</div>'+
+									'</div>'+
+								'</div>';
+
+				$elem = $(strHtml);
+				elems.push($elem[0]);
+			}
+			ui.isoTope.item.add(elems);
+		}
+
+		function leftNav(isOpen)
+		{
+			if(!isOpen)
+			{
+				$('#left-collapse-btn').tooltip("destroy").tooltip({container:'body',placement:'right',animation:false,title:"Expand"});
+				$('#left-nav-acc').children().each(function(){
+					$(this).tooltip({container:'body',placement:'right',animation:false,title:$(this).find("button[data-toggle=collapse]").text()});
+				});
+				$("#wrapper").addClass("left-toggle");
+			}
+			else
+			{
+				$('#left-collapse-btn').tooltip("destroy").tooltip({container:'body',placement:'right',animation:false,title:"Collapse"});
+				$('#left-nav-acc .panel').tooltip("destroy");
+				$("#wrapper").removeClass("left-toggle");
+			}
+		}
+	</script>
+</body>
+</html>

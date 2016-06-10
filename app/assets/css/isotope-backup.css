@@ -1,0 +1,103 @@
+/* isotope */
+.iso-container .iso-header{
+	background-color: #4d4d4d;
+    display: table;
+    list-style: outside none none;
+    padding: 6px 10px;
+    width: 100%;
+}
+.iso-container .iso-header > li{
+	display: table-cell;
+	position: relative;
+}
+.iso-container .iso-header .search{
+	vertical-align: middle;
+	width: 40%;
+}
+.iso-container .iso-header .search input{
+	border-radius:0;
+}
+.iso-container .iso-header .dropdown-menu-right{
+    background-color: #F0F1F3;
+    text-align: right;
+    border-color: #ddd;
+}
+.iso-container .iso-header .dropdown-menu-right a{
+	font-family: "Open Sans";
+    color: #606972;
+    font-weight: 400;
+    min-height: 30px;
+    font-size: 13px;
+    min-width: 200px;
+	line-height: 30px;
+}
+.iso-container .iso-header .sorting{
+	text-align:right;
+}
+.iso-container .iso-header .sorting.open::before{
+	content:"\e253";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	top: 20px;
+    color: #eee;
+    right: 5px;
+    font-size: 24px;
+    z-index: 1020;
+}
+.iso-container .iso-header .sorting .dropdown-toggle{
+	background-color: #4d4d4d;
+    border: none;
+}
+.iso-container .iso-header .sorting .dropdown-toggle::before{
+	content:"";
+	background-image:url("../img/icons/sorting.svg");
+	background-size: contain;
+    padding: 0 10px;
+    background-repeat: no-repeat;
+}
+
+.iso-container .iso-header .filters button{
+	background-color: #4d4d4d;
+    color: #fff;
+	margin:0;
+	padding:10px;
+	border:none;
+	outline:none;
+	min-width: 10%;
+}
+
+#isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.iso-container .iso-item {
+	margin: 5px;
+	height:322px;
+	background-color:#fff;
+	-pie-box-shadow: 0px 0px 8px #A3A3A3;
+	box-shadow: 0px 0px 8px rgba(143,143,143,0.82);
+	background-color: #FFFFFF;
+}
+.iso-container .iso-item.single {
+  width:212px;
+}
+.iso-container .iso-item.single .front .iso-image{
+	width: 100%;
+    height: 144px;
+    overflow: hidden;
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.iso-container .iso-item.single .front .iso-title{
+	color:#0280D4;
+	font-family: 'robotoregular';
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    padding: 5px 15px;
+}

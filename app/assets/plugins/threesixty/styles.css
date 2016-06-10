@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "threesixty";
+  src:url("fonts/threesixty.eot");
+  src:url("fonts/threesixty.eot?#iefix") format("embedded-opentype"),
+    url("fonts/threesixty.woff") format("woff"),
+    url("fonts/threesixty.ttf") format("truetype"),
+    url("fonts/threesixty.svg#threesixty") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "threesixty" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="threesixty-"]:before,
+[class*=" threesixty-"]:before {
+  font-family: "threesixty" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.threesixty-contact-add-2:before {
+  content: "\e01e";
+}
+.threesixty-audio-asset:before {
+  content: "\e000";
+}
+.threesixty-books:before {
+  content: "\e001";
+}
+.threesixty-certificate:before {
+  content: "\e002";
+}
+.threesixty-chat-now:before {
+  content: "\e003";
+}
+.threesixty-chat-now-2:before {
+  content: "\e004";
+}
+.threesixty-classroom:before {
+  content: "\e005";
+}
+.threesixty-classroom-round:before {
+  content: "\e006";
+}
+.threesixty-coffee-cup:before {
+  content: "\e007";
+}
+.threesixty-dvd-cd:before {
+  content: "\e008";
+}
+.threesixty-dvd-cd-round:before {
+  content: "\e009";
+}
+.threesixty-e-book:before {
+  content: "\e00a";
+}
+.threesixty-e-book-round:before {
+  content: "\e00b";
+}
+.threesixty-online-assessment:before {
+  content: "\e00c";
+}
+.threesixty-shippable-round:before {
+  content: "\e00d";
+}
+.threesixty-reviews:before {
+  content: "\e00e";
+}
+.threesixty-report:before {
+  content: "\e00f";
+}
+.threesixty-recorded-webinar-round:before {
+  content: "\e010";
+}
+.threesixty-recorded-webinar:before {
+  content: "\e011";
+}
+.threesixty-print-based-round:before {
+  content: "\e012";
+}
+.threesixty-print-based:before {
+  content: "\e013";
+}
+.threesixty-online-print-round:before {
+  content: "\e014";
+}
+.threesixty-online-print:before {
+  content: "\e015";
+}
+.threesixty-online-package-round:before {
+  content: "\e016";
+}
+.threesixty-online-interactive-round:before {
+  content: "\e017";
+}
+.threesixty-online-interactive:before {
+  content: "\e018";
+}
+.threesixty-online-assessment-round:before {
+  content: "\e019";
+}
+.threesixty-shop:before {
+  content: "\e01a";
+}
+.threesixty-streaming-video:before {
+  content: "\e01b";
+}
+.threesixty-streaming-video-round:before {
+  content: "\e01c";
+}
+.threesixty-tutor:before {
+  content: "\e01d";
+}
+.threesixty-tutor-round:before {
+  content: "\e01f";
+}
+.threesixty-webinar:before {
+  content: "\e022";
+}
+.threesixty-webinar-round:before {
+  content: "\e023";
+}
+.threesixty-text-asset:before {
+  content: "\e024";
+}
+.threesixty-cc-asset:before {
+  content: "\e025";
+}
+.threesixty-video-asset:before {
+  content: "\e020";
+}
+.threesixty-visual-asset:before {
+  content: "\e021";
+}
+.threesixty-return-arrow:before {
+  content: "\e026";
+}
+.threesixty-search-courses:before {
+  content: "\e027";
+}
+.threesixty-online-course:before {
+  content: "\e028";
+}

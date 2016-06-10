@@ -1,0 +1,62 @@
+{
+        logo:{
+          label:"360training",
+          source:"assets/img/logo.svg",
+          url:"/"
+        },
+        user_data:{
+          name:"Username",
+          email:"username@email.com"
+        },
+        top_menu:[
+          {label:"Account Information",type:"account-info"},
+          {label:"Address Book",type:"address-book"},
+          {label:"My Orders",type:"orders"},
+          {label:"Billing & Subscription",type:"billing"},
+          {label:"Support",type:"support"},
+          {label:MENU_DIVIDER},
+          {label:"Terms Of Use",type:"terms"},
+          {label:"Privacy Policy",type:"privacy-policy"},
+          {label:MENU_DIVIDER},
+          {label:"Sign Out",type:"sign-out"}
+        ],
+        left_menu:{
+            label:"Dashboard",
+            child:[
+              {
+                label:"Learner",
+                type:"learn",
+                child:[
+                      {label:"My Courses",type:"courses"},
+                      {label:"My Subscriptions",type:"subscriptions"}
+                ]
+              },
+              {
+                label:"Author",
+                type:"author",
+                child:[
+                      {label:"Create & Manage Courses",type:"create-course"},
+                      {label:"Course Reports",type:"course-report"}
+                ]
+              },
+              {
+                label:"Manage",
+                type:"manage",
+                child:[
+                      {label:"Manage Users",type:"manage-users"},
+                      {label:"Enroll Users",type:"enroll-users"},
+                      {label:"Run Reports",type:"run-report"}
+                ]
+              },
+              {
+                label:"Resources",
+                type:"resources",
+                child:[
+                      {label:"Shop Courses",type:"shop"},
+                      {label:"Browse Free Courses",type:"browse-free-courses"},
+                      {label:"Support Forum",type:"support"}
+                ]
+              }
+          ]
+        }
+      }

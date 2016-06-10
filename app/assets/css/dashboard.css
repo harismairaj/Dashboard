@@ -1,0 +1,490 @@
+/* load Open Sans Font from local */
+@import url(../fonts/font.css);
+
+body {
+	overflow:auto;
+	min-width:320px;
+	padding-top: 80px;
+	font-family: "robotoregular";
+}
+*:focus {
+    outline: none !important;
+	text-decoration: none !important;
+}
+
+#wrapper{
+	bottom: 0;
+	clear: both;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	right: 0;
+	top: 80px;
+}
+
+
+.navbar-fixed-top {
+	box-shadow: 4px 4px 5px rgba(186,194,199,0.5);
+	border-style: solid;
+	border-color: #BAC2C7;
+	background-color: #FFFFFF;
+	border-width: 0px 0px 1px;
+}
+.navbar-fixed-top{
+	height:80px;
+	padding: 0 5px;
+}
+.navbar-fixed-top .brand{
+	background-image: url('../img/logo.svg');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 0;
+    padding: 30px 110px;
+    position: absolute;
+}
+.navbar-fixed-top ul.menu{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+	margin:0;
+}
+.navbar-fixed-top ul.menu > li{
+    display: table-cell;
+    vertical-align: middle;
+}
+.navbar-fixed-top ul.menu .user-detail{
+    font-size: 12px;
+    text-align: right;
+	padding-right: 15px;
+}
+.navbar-fixed-top ul.menu .user-detail a>div{
+	width: 680px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+	color:#999;
+}
+.navbar-fixed-top ul.menu .user-detail a>.username{
+	color:#666;
+	font-size: 14px;
+}
+.navbar-fixed-top ul.menu > li.open::before{
+	content:"\e253";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	top: 60px;
+    color: #eee;
+    right: 15px;
+    font-size: 24px;
+    z-index: 1020;
+}
+.navbar-fixed-top .dropdown-toggle{
+	background-color: #fff;
+    border-left: 1px solid #eee;
+    padding: 29px 20px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+.navbar-fixed-top .dropdown-menu-right{
+	top: 78px;
+    background-color: #F0F1F3;
+    text-align: right;
+    border-color: #ddd;
+}
+.navbar-fixed-top .dropdown-menu-right a{
+	font-family: "Open Sans";
+    color: #606972;
+    font-weight: 400;
+    min-height: 30px;
+    font-size: 13px;
+    min-width: 200px;
+	line-height: 30px;
+}
+.navbar-fixed-top .dropdown-menu-right a.active{
+	color:#606972;
+	background: linear-gradient(to right,#BAC2C7 ,#F0F1F3 100%);
+}
+
+.sidebar {
+	position: fixed;
+	top: 80px;
+	bottom: 0;
+	left: 0;
+	width: 250px;
+	z-index: 1000;
+	display: block;
+	padding: 15px;
+	overflow: hidden;
+	background-color: #333333;
+	border-right: 1px solid #eee;
+}
+.sidebar button[data-toggle="collapse"]::after{
+	content:"+";
+	position:absolute;
+	right: 10px;
+	font-size: 12px;
+    margin-top: 2px;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.sidebar button.collapsed[data-toggle="collapse"]::after{
+	content: "\e259";
+}
+.sidebar .panel {
+    margin-bottom: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+	border-color: #BAC2C7;
+	border-radius:0;
+}
+.sidebar .panel > button{
+	position:relative;
+	color:#fff;
+	background-color:#4D4D4D;
+	display: block;
+    padding: 15px 35px 15px 38px;
+	height:50px;
+	width: 100%;
+	border: 0;
+    text-align: left;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar .panel > button.learn::before{
+	content:"\e233";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	left: 16px;
+	top: 16px;
+    font-size: 16px;
+}
+.sidebar .panel > button.author::before{
+	content:"\270f";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	left: 18px;
+	top: 18px;
+    font-size: 12px;
+}
+.sidebar .panel > button.manage::before{
+	content:"\e019";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	left: 18px;
+	top: 18px;
+    font-size: 12px;
+}
+.sidebar .panel > button.resources::before{
+	content:"\e043";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	left: 18px;
+	top: 18px;
+    font-size: 12px;
+}
+.no-touch .sidebar .panel > button:hover{
+	background-color: #666;
+	text-decoration:none;
+}
+.sidebar .panel-collapse a{
+	position:relative;
+	display: block;
+    padding: 15px 35px 15px 20px;
+	line-height: 18px;
+    font-size: 12px;
+    color: #4D4D4D;
+	background-color: #E0E0E0;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar .panel-collapse a.active{
+	background: linear-gradient(to right,#BAC2C7 ,#F0F1F3 100%);
+}
+.no-touch .sidebar .panel-collapse a:hover{
+	background-color: #fff;
+	text-decoration:none;
+}
+.sidebar .courses-icon::after{
+	content:"";
+	background-image:url("../img/icons/courses.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .create-course-icon::after{
+	content:"";
+	background-image:url("../img/icons/create.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .shop-icon::after{
+	content:"";
+	background-image:url("../img/icons/shop.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .subscriptions-icon::after{
+	content:"";
+	background-image:url("../img/icons/subscriptions.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .browse-free-courses-icon::after{
+	content:"";
+	background-image:url("../img/icons/browse.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .manage-users-icon::after{
+	content:"";
+	background-image:url("../img/icons/manage-users.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .enroll-users-icon::after{
+	content:"";
+	background-image:url("../img/icons/enroll-users.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .support-icon::after{
+	content:"";
+	background-image:url("../img/icons/support.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .run-report-icon::after{
+	content:"";
+	background-image:url("../img/icons/report.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .course-report-icon::after{
+	content:"";
+	background-image:url("../img/icons/course-report.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 32%;
+}
+.sidebar .heading{
+	color: #BAC2C7;
+	padding-bottom: 10px;
+}
+.sidebar .heading::before{
+	content:"";
+	background-image:url("../img/icons/dashboard.svg");
+	background-size: contain;
+    padding: 10px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    top: 1px;
+}
+.sidebar .items{
+	overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 75px;
+    bottom: 34px;
+}
+.sidebar .collapse-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 25px;
+    height: 34px;
+    border: none;
+    outline: none;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar .collapse-btn::after{
+	content:"\e257";
+	position:absolute;
+	font-family: 'Glyphicons Halflings';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	top: 7px;
+	right: 20px;
+}
+.no-touch .sidebar .collapse-btn:hover{
+	background-color: #444;
+}
+
+
+.left-toggle .sidebar .panel-collapse{
+	display:none;
+}
+.left-toggle .sidebar .panel > button{
+	padding: 15px;
+}
+.left-toggle .sidebar .heading::before{
+	left: -10px;
+}
+.left-toggle .sidebar button[data-toggle="collapse"]::after,
+.left-toggle .sidebar button.collapsed[data-toggle="collapse"]::after,
+.left-toggle .sidebar .heading span,
+.left-toggle .sidebar button[data-toggle="collapse"] span{
+	display:none;
+}
+.left-toggle .sidebar .collapse-btn::after{
+	content:"\e258";
+}
+.left-toggle .sidebar{
+	width: 0;
+	padding-left: 25px;
+    padding-right: 25px;
+}
+.left-toggle .main{
+	left: 40px;
+}
+
+
+.main {
+	position: absolute;
+	left: 250px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 20px;
+}
+.main .page-heading {
+  margin-top: 0;
+  color: #0280D4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main .statistics .placeholder{
+	background-color: #eee;
+    margin: 10px 0;
+    padding: 10px;
+	text-align: center;
+	font-family: "Open Sans";
+	color:#0280d4;
+}
+.main .statistics .placeholder h4{
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	.navbar-fixed-top ul.menu .user-detail a>div{
+		width: 420px;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.navbar-fixed-top ul.menu .user-detail{
+		padding-right: 10px;
+	}
+	.navbar-fixed-top ul.menu .user-detail a>div{
+		width: 260px;
+	}
+}
+
+@media only screen and (max-width: 560px)
+{
+	#content-overlay{
+		width:100%;
+		height:100%;
+		background-color:rgba(0, 0, 0, 0.4);
+		position:fixed;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		z-index:2;
+	}
+	.left-toggle #content-overlay{
+		display:none;
+	}
+
+	.left-toggle .main{
+		width:auto;
+	}
+	.main{
+		width:600px;
+	}
+
+	.navbar-fixed-top .dropdown-toggle{
+		padding: 29px 15px;
+	}
+
+	.navbar-fixed-top ul.menu{
+		right: 0;
+	}
+
+	.navbar-fixed-top ul.menu .user-detail{
+		padding-right: 5px;
+	}
+
+	.navbar-fixed-top .brand{
+		background-position: -12px center;
+		background-size: cover;
+		padding: 30px;
+	}
+	.navbar-fixed-top ul.menu .user-detail a>div{
+		width: 200px;
+	}
+}
